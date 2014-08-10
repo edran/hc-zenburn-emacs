@@ -1,4 +1,4 @@
-;;; zenburn-theme.el --- A low contrast color theme for Emacs.
+;;; hc-zenburn-theme.el --- A low contrast color theme for Emacs.
 
 ;; Copyright (C)2014 Nantas Nardelli
 
@@ -21,55 +21,55 @@
 
 ;;; Commentary:
 
-;; An high contrast fork of the zenburn theme created by Bozhidar Batsov
+;; An higher contrast version of the zenburn theme
 
 ;;; Credits:
 
-;; Bozhidar Batsov created the zenburn theme for emacs, which was a port of
-;; the vim theme made by Jani Nurminen
+;; Bozhidar Batsov created the zenburn theme for emacs, which was a
+;; port of the vim theme made by Jani Nurminen
 
 ;;; Code:
 
-(deftheme hc-zenburn "The high constrast Zenburn color theme")
+(deftheme hc-zenburn "An higher constrast Zenburn color theme")
 
 ;;; Color Palette
 
 (defvar hc-zenburn-colors-alist
   '(("hc-zenburn-fg+1"     . "#FFFFEF")
-    ("hc-zenburn-fg"       . "#E6E6D5")
+    ("hc-zenburn-fg"       . "#DCDCCC")
     ("hc-zenburn-fg-1"     . "#70705E")
     ("hc-zenburn-bg-2"     . "#000000")
-    ("hc-zenburn-bg-1"     . "#3A3A3A")
-    ("hc-zenburn-bg-05"    . "#464646")
-    ("hc-zenburn-bg"       . "#4A4A4A")
-    ("hc-zenburn-bg+05"    . "#515151")
-    ("hc-zenburn-bg+1"     . "#575757")
-    ("hc-zenburn-bg+2"     . "#676767")
-    ("hc-zenburn-bg+3"     . "#777777")
-    ("hc-zenburn-red+1"    . "#E4ABAB")
-    ("hc-zenburn-red"      . "#D49B9B")
-    ("hc-zenburn-red-1"    . "#C48B8B")
-    ("hc-zenburn-red-2"    . "#B47B7B")
-    ("hc-zenburn-red-3"    . "#A46B6B")
-    ("hc-zenburn-red-4"    . "#945B5B")
-    ("hc-zenburn-orange"   . "#E7B797")
-    ("hc-zenburn-yellow"   . "#F8E7B7")
-    ("hc-zenburn-yellow-1" . "#E8D7A7")
-    ("hc-zenburn-yellow-2" . "#D8C797")
-    ("hc-zenburn-green-1"  . "#678767")
-    ("hc-zenburn-green"    . "#87A787")
-    ("hc-zenburn-green+1"  . "#97BA97")
-    ("hc-zenburn-green+2"  . "#A7CDA7")
-    ("hc-zenburn-green+3"  . "#B7E0B7")
-    ("hc-zenburn-green+4"  . "#C7F3C7")
-    ("hc-zenburn-cyan"     . "#9BE8EB")
+    ("hc-zenburn-bg-1"     . "#202020")
+    ("hc-zenburn-bg-05"    . "#2D2D2D")
+    ("hc-zenburn-bg"       . "#313131")
+    ("hc-zenburn-bg+05"    . "#383838")
+    ("hc-zenburn-bg+1"     . "#3E3E3E")
+    ("hc-zenburn-bg+2"     . "#4E4E4E")
+    ("hc-zenburn-bg+3"     . "#5E5E5E")
+    ("hc-zenburn-red+1"    . "#E9B0B0")
+    ("hc-zenburn-red"      . "#D9A0A0")
+    ("hc-zenburn-red-1"    . "#C99090")
+    ("hc-zenburn-red-2"    . "#B98080")
+    ("hc-zenburn-red-3"    . "#A97070")
+    ("hc-zenburn-red-4"    . "#996060")
+    ("hc-zenburn-orange"   . "#ECBC9C")
+    ("hc-zenburn-yellow"   . "#FDECBC")
+    ("hc-zenburn-yellow-1" . "#EDDCAC")
+    ("hc-zenburn-yellow-2" . "#DDCC9C")
+    ("hc-zenburn-green-1"  . "#6C8C6C")
+    ("hc-zenburn-green"    . "#8CAC8C")
+    ("hc-zenburn-green+1"  . "#9CBF9C")
+    ("hc-zenburn-green+2"  . "#ACD2AC")
+    ("hc-zenburn-green+3"  . "#BCE5BC")
+    ("hc-zenburn-green+4"  . "#CCF8CC")
+    ("hc-zenburn-cyan"     . "#A0EDF0")
     ("hc-zenburn-blue+1"   . "#9CC7FB")
-    ("hc-zenburn-blue"     . "#94D8DB")
-    ("hc-zenburn-blue-1"   . "#84C0C3")
-    ("hc-zenburn-blue-2"   . "#74A8AB")
-    ("hc-zenburn-blue-3"   . "#649093")
-    ("hc-zenburn-blue-4"   . "#54787B")
-    ("hc-zenburn-blue-5"   . "#3E6868")
+    ("hc-zenburn-blue"     . "#99DDE0")
+    ("hc-zenburn-blue-1"   . "#89C5C8")
+    ("hc-zenburn-blue-2"   . "#79ADB0")
+    ("hc-zenburn-blue-3"   . "#699598")
+    ("hc-zenburn-blue-4"   . "#597D80")
+    ("hc-zenburn-blue-5"   . "#436D6D")
     ("hc-zenburn-magenta"  . "#E090C7"))
   "List of Hc-Zenburn colors.
 Each element has the form (NAME . HEX).

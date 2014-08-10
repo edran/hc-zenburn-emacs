@@ -23,7 +23,7 @@ Download `hc-zenburn-theme.el` to the directory `~/.emacs.d/themes/`. Add this t
 
 Now you can load the theme with the interactive function `load-theme` like this:
 
-`M-x load-theme RET zenburn`
+`M-x load-theme RET hc-zenburn`
 
 <!-- ### Package.el -->
 
@@ -40,10 +40,6 @@ To load it automatically on Emacs startup add this to your init file:
 
 ```lisp
 (load-theme 'hc-zenburn t)
-```
-or
-```lisp
-(load-theme 'higher-hc-zenburn t)
 ```
 
 ## Ugly colors in the terminal Emacs version
