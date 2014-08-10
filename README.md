@@ -7,7 +7,7 @@ with Emacs 24.
 
 ## Screenshot
 
-![]https://github.com/edran/hc-zenburn-emacs/blob/master/screenshot.jpg)
+![](https://github.com/edran/hc-zenburn-emacs/blob/master/screenshot.jpeg)
 
 
 ## Installation
