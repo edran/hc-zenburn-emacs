@@ -1,10 +1,10 @@
-;;; hc-zenburn-theme.el --- A low contrast color theme for Emacs.
+;;; hc-zenburn-theme.el --- An higher contrast version of the Zenburn theme.
 
 ;; Copyright (C)2014 Nantas Nardelli
 
 ;; Author: Nantas Nardelli <nantas.nardelli@gmail.com>
 ;; URL: https:github.com/edran/hc-zenburn-emacs
-;; Version 2.1hc
+;; Version 2.1
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -25,8 +25,9 @@
 
 ;;; Credits:
 
-;; Bozhidar Batsov created the zenburn theme for emacs, which was a
-;; port of the vim theme made by Jani Nurminen
+;; Bozhidar Batsov <bozhidar@batsov.com> created the zenburn theme
+;; for emacs, which was a port of the vim theme made by Jani Nurminen. 
+;; His repository can be found at: https://github.com/bbatsov/zenburn-emacs
 
 ;;; Code:
 
