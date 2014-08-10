@@ -4,7 +4,7 @@
 
 ;; Author: Nantas Nardelli <nantas.nardelli@gmail.com>
 ;; URL: https:github.com/edran/hc-zenburn-emacs
-;; Version 0.1
+;; Version 2.1hc
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -21,16 +21,16 @@
 
 ;;; Commentary:
 
-;; A higher contrast fork of the zenburn theme created by Bozhidar Batsov
+;; An high contrast fork of the zenburn theme created by Bozhidar Batsov
 
 ;;; Credits:
 
-;; Bozhidar Batsov created the  theme for emacs, which was a port of
+;; Bozhidar Batsov created the zenburn theme for emacs, which was a port of
 ;; the vim theme made by Jani Nurminen
 
 ;;; Code:
 
-(deftheme hc-zenburn "The High Constrast Hc-Zenburn color theme")
+(deftheme hc-zenburn "The high constrast Zenburn color theme")
 
 ;;; Color Palette
 

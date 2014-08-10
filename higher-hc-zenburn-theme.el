@@ -4,7 +4,7 @@
 
 ;; Author: Nantas Nardelli <nantas.nardelli@gmail.com>
 ;; URL: https:github.com/edran/hc-zenburn-emacs
-;; Version 0.1
+;; Version 2.1hc
 
 ;; This program is free software; you can redistribute it and/or modify
 ;; it under the terms of the GNU General Public License as published by
@@ -25,12 +25,12 @@
 
 ;;; Credits:
 
-;; Bozhidar Batsov created the  theme for emacs, which was a port of
-;; the vim theme made by Jani Nurminen
+;; Bozhidar Batsov created the zenburn theme for emacs, which was a
+;; port of the vim theme made by Jani Nurminen
 
 ;;; Code:
 
-(deftheme higher-hc-zenburn "The Higher Constrast Hc-Zenburn color theme")
+(deftheme higher-hc-zenburn "An even higher constrast Zenburn color theme")
 
 ;;; Color Palette
 
@@ -39,7 +39,7 @@
     ("higher-hc-zenburn-fg"       . "#DCDCCC")
     ("higher-hc-zenburn-fg-1"     . "#70705E")
     ("higher-hc-zenburn-bg-2"     . "#000000")
-    ("higher-hc-zenburn-bg-1"     . "#303030")
+    ("higher-hc-zenburn-bg-1"     . "#202020")
     ("higher-hc-zenburn-bg-05"    . "#2D2D2D")
     ("higher-hc-zenburn-bg"       . "#313131")
     ("higher-hc-zenburn-bg+05"    . "#383838")
