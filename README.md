@@ -1,6 +1,6 @@
 ## About
 
-A higher contrast version of the popular zenburn theme created by Bozhidar Batsov.
+A higher contrast version of the popular zenburn theme created by [Bozhidar Batsov](https://github.com/bbatsov/zenburn-emacs).
 
 This theme uses the new built-in theming support available starting
 with Emacs 24.
