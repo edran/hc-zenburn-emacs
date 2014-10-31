@@ -56,7 +56,7 @@ Source the `.bashrc`(`.zshrc`) file and start Emacs again.
 # Bugs & Improvements
 
 Please, report any problems that you find at the
-[project integrated tracker](https://github.com/bbatsov/zenburn-emacs/issues).
+[project integrated tracker](https://github.com/edran/hc-zenburn-emacs/issues).
 If you've added some improvements and you want them included upstream
 don't hesitate to send me a patch or even better - a GitHub pull
 request.
