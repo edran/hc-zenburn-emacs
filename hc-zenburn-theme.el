@@ -1,4 +1,4 @@
-;;; hc-zenburn-theme.el --- An higher contrast version of the Hc-Zenburn theme.
+;;; hc-zenburn-theme.el --- An higher contrast version of the Zenburn theme.
 
 ;; Copyright (C)2014 Nantas Nardelli
 
@@ -21,18 +21,18 @@
 
 ;;; Commentary:
 
-;; An higher contrast version of the hc-zenburn theme
+;; An higher contrast version of the Zenburn theme
 
 ;;; Credits:
 
-;; Bozhidar Batsov <bozhidar@batsov.com> created the hc-zenburn theme
+;; Bozhidar Batsov <bozhidar@batsov.com> created the Zenburn theme
 ;; for emacs, which was a port of the vim theme made by Jani Nurminen.
-;; His repository can be found at: https://github.com/bbatsov/hc-zenburn-emacs
+;; His repository can be found at: https://github.com/bbatsov/zenburn-emacs
 
 
 ;;; Code:
 
-(deftheme hc-zenburn "An higher constrast Hc-Zenburn color theme")
+(deftheme hc-zenburn "An higher constrast Zenburn color theme")
 
 ;;; Color Palette
 
