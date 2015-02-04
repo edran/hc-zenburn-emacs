@@ -11,7 +11,7 @@ with Emacs 24.
 
 ## Installation
 
-### Package.el
+### package.el
 
 hc-zenburn is available in [MELPA](http://melpa.org/).
 
