@@ -9,8 +9,21 @@ with Emacs 24.
 
 ![](https://github.com/edran/hc-zenburn-emacs/blob/master/screenshot.jpeg)
 
-
 ## Installation
+
+### Package.el
+
+hc-zenburn is available in [MELPA](http://melpa.org/).
+
+You can install `hc-zenburn` with the following command:
+
+`M-x package-install hc-zenburn-theme`
+
+To load it automatically on Emacs startup add this to your init file:
+
+```lisp
+(load-theme 'hc-zenburn t)
+```
 
 ### Manual
 
@@ -24,17 +37,6 @@ Download `hc-zenburn-theme.el` to the directory `~/.emacs.d/themes/`. Add this t
 Now you can load the theme with the interactive function `load-theme` like this:
 
 `M-x load-theme RET hc-zenburn`
-
-<!-- ### Package.el -->
-
-<!-- Zenburn is available in both [Marmalade](http://marmalade-repo.org) -->
-<!-- and [MELPA](http://melpa.milkbox.net). -->
-<!-- Keep in mind the fact the version in the Marmalade repo may not always -->
-<!-- be up-to-date. -->
-
-<!-- You can install `zenburn` with the following command: -->
-
-<!-- `M-x package-install hc-zenburn-theme` -->
 
 To load it automatically on Emacs startup add this to your init file:
 
