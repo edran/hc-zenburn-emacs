@@ -1,4 +1,4 @@
-## About
+# hc-zenburn-emacs
 
 A higher contrast version of the popular zenburn theme created by [Bozhidar Batsov](https://github.com/bbatsov/zenburn-emacs).
 
