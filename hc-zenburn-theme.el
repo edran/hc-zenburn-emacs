@@ -96,6 +96,7 @@ Also bind `class' to ((class color) (min-colors 89))."
 ;;;; Built-in
 ;;;;; basic coloring
    '(button ((t (:underline t))))
+   `(default ((t (:foreground ,hc-zenburn-fg :background ,hc-zenburn-bg))))
    `(link ((t (:foreground ,hc-zenburn-yellow :underline t :weight bold))))
    `(link-visited ((t (:foreground ,hc-zenburn-yellow-2 :underline t :weight normal))))
    `(default ((t (:foreground ,hc-zenburn-fg :background ,hc-zenburn-bg))))
@@ -129,6 +130,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(grep-hit-face ((t (:foreground ,hc-zenburn-blue))))
    `(grep-match-face ((t (:foreground ,hc-zenburn-orange :weight bold))))
    `(match ((t (:background ,hc-zenburn-bg-1 :foreground ,hc-zenburn-orange :weight bold))))
+;;;;; neotree
+   `(neo-file-link-face ((t (:background ,hc-zenburn-bg :foreground ,hc-zenburn-fg))))
+   `(neo-root-dir-face ((t (:foreground ,hc-zenburn-blue :weight bold))))
+   `(neo-dir-link-face ((t (:foreground ,hc-zenburn-green+1))))
 ;;;;; isearch
    `(isearch ((t (:foreground ,hc-zenburn-yellow-2 :weight bold :background ,hc-zenburn-bg+2))))
    `(isearch-fail ((t (:foreground ,hc-zenburn-fg :background ,hc-zenburn-red-4))))
@@ -611,6 +616,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(macrostep-macro-face
      ((t (:underline t))))
 ;;;;; magit
+   `(magit-blame-heading ((t (:background ,hc-zenburn-blue-3 :foreground ,hc-zenburn-bg))))
    `(magit-item-highlight ((t (:background ,hc-zenburn-bg+05))))
    `(magit-section-title ((t (:foreground ,hc-zenburn-yellow :weight bold))))
    `(magit-process-ok ((t (:foreground ,hc-zenburn-green :weight bold))))
@@ -978,7 +984,7 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ansi-color-names-vector [,hc-zenburn-bg ,hc-zenburn-red ,hc-zenburn-green ,hc-zenburn-yellow
                                           ,hc-zenburn-blue ,hc-zenburn-magenta ,hc-zenburn-cyan ,hc-zenburn-fg])
 ;;;;; fill-column-indicator
-   `(fci-rule-color ,hc-zenburn-bg-05)
+   `(fci-rule-color ,hc-zenburn-bg+3)
 ;;;;; vc-annotate
    `(vc-annotate-color-map
      '(( 20. . ,hc-zenburn-red-1)
