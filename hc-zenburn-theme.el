@@ -135,9 +135,9 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(neo-root-dir-face ((t (:foreground ,hc-zenburn-blue :weight bold))))
    `(neo-dir-link-face ((t (:foreground ,hc-zenburn-green+1))))
 ;;;;; isearch
-   `(isearch ((t (:foreground ,hc-zenburn-yellow-2 :weight bold :background ,hc-zenburn-bg+2))))
+   `(isearch ((t (:foreground ,hc-zenburn-bg :weight bold :background ,hc-zenburn-green+4))))
    `(isearch-fail ((t (:foreground ,hc-zenburn-fg :background ,hc-zenburn-red-4))))
-   `(lazy-highlight ((t (:foreground ,hc-zenburn-yellow-2 :weight bold :background ,hc-zenburn-bg-05))))
+   `(lazy-highlight ((t (:weight bold :background ,hc-zenburn-bg+3))))
 
    `(menu ((t (:foreground ,hc-zenburn-fg :background ,hc-zenburn-bg))))
    `(minibuffer-prompt ((t (:foreground ,hc-zenburn-yellow))))
