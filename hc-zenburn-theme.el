@@ -600,6 +600,10 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(ledger-font-report-clickable-face ((t (:foreground ,hc-zenburn-orange :weight normal))))
 ;;;;; linum-mode
    `(linum ((t (:foreground ,hc-zenburn-green+2 :background ,hc-zenburn-bg))))
+;;;;; lui
+   `(lui-time-stamp-face ((t (:foreground ,hc-zenburn-blue-1))))
+   `(lui-hilight-face ((t (:foreground ,hc-zenburn-green+2 :background ,hc-zenburn-bg))))
+   `(lui-button-face ((t (:inherit hover-highlight))))
 ;;;;; macrostep
    `(macrostep-gensym-1
      ((t (:foreground ,hc-zenburn-green+2 :background ,hc-zenburn-bg-1))))
@@ -616,14 +620,81 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(macrostep-macro-face
      ((t (:underline t))))
 ;;;;; magit
-   `(magit-blame-heading ((t (:background ,hc-zenburn-blue-3 :foreground ,hc-zenburn-bg))))
-   `(magit-item-highlight ((t (:background ,hc-zenburn-bg+05))))
-   `(magit-section-title ((t (:foreground ,hc-zenburn-yellow :weight bold))))
-   `(magit-process-ok ((t (:foreground ,hc-zenburn-green :weight bold))))
-   `(magit-process-ng ((t (:foreground ,hc-zenburn-red :weight bold))))
-   `(magit-branch ((t (:foreground ,hc-zenburn-blue :weight bold))))
-   `(magit-log-author ((t (:foreground ,hc-zenburn-orange))))
-   `(magit-log-sha1 ((t (:foreground, hc-zenburn-orange))))
+;;;;;; headings and diffs
+   `(magit-section-highlight           ((t (:background ,hc-zenburn-bg+05))))
+   `(magit-section-heading             ((t (:foreground ,hc-zenburn-yellow :weight bold))))
+   `(magit-section-heading-selection   ((t (:foreground ,hc-zenburn-orange :weight bold))))
+   `(magit-diff-file-heading           ((t (:weight bold))))
+   `(magit-diff-file-heading-highlight ((t (:background ,hc-zenburn-bg+05  :weight bold))))
+   `(magit-diff-file-heading-selection ((t (:background ,hc-zenburn-bg+05
+                                            :foreground ,hc-zenburn-orange :weight bold))))
+   `(magit-diff-hunk-heading           ((t (:background ,hc-zenburn-bg+1))))
+   `(magit-diff-hunk-heading-highlight ((t (:background ,hc-zenburn-bg+2))))
+   `(magit-diff-hunk-heading-selection ((t (:background ,hc-zenburn-bg+2
+                                            :foreground ,hc-zenburn-orange))))
+   `(magit-diff-lines-heading          ((t (:background ,hc-zenburn-orange
+                                            :foreground ,hc-zenburn-bg+2))))
+   `(magit-diff-context-highlight      ((t (:background ,hc-zenburn-bg+05
+                                            :foreground "grey70"))))
+   `(magit-diffstat-added   ((t (:foreground ,hc-zenburn-green+4))))
+   `(magit-diffstat-removed ((t (:foreground ,hc-zenburn-red))))
+;;;;;; popup
+   `(magit-popup-heading             ((t (:foreground ,hc-zenburn-yellow  :weight bold))))
+   `(magit-popup-key                 ((t (:foreground ,hc-zenburn-green-1 :weight bold))))
+   `(magit-popup-argument            ((t (:foreground ,hc-zenburn-green   :weight bold))))
+   `(magit-popup-disabled-argument   ((t (:foreground ,hc-zenburn-fg-1    :weight normal))))
+   `(magit-popup-option-value        ((t (:foreground ,hc-zenburn-blue-2  :weight bold))))
+;;;;;; process
+   `(magit-process-ok    ((t (:foreground ,hc-zenburn-green  :weight bold))))
+   `(magit-process-ng    ((t (:foreground ,hc-zenburn-red    :weight bold))))
+;;;;;; log
+   `(magit-log-author    ((t (:foreground ,hc-zenburn-orange))))
+   `(magit-log-date      ((t (:foreground ,hc-zenburn-fg-1))))
+   `(magit-log-graph     ((t (:foreground ,hc-zenburn-fg+1))))
+;;;;;; sequence
+   `(magit-sequence-pick ((t (:foreground ,hc-zenburn-yellow-2))))
+   `(magit-sequence-stop ((t (:foreground ,hc-zenburn-green))))
+   `(magit-sequence-part ((t (:foreground ,hc-zenburn-yellow))))
+   `(magit-sequence-head ((t (:foreground ,hc-zenburn-blue))))
+   `(magit-sequence-drop ((t (:foreground ,hc-zenburn-red))))
+   `(magit-sequence-done ((t (:foreground ,hc-zenburn-fg-1))))
+   `(magit-sequence-onto ((t (:foreground ,hc-zenburn-fg-1))))
+;;;;;; bisect
+   `(magit-bisect-good ((t (:foreground ,hc-zenburn-green))))
+   `(magit-bisect-skip ((t (:foreground ,hc-zenburn-yellow))))
+   `(magit-bisect-bad  ((t (:foreground ,hc-zenburn-red))))
+;;;;;; blame
+   `(magit-blame-heading ((t (:background ,hc-zenburn-bg-1 :foreground ,hc-zenburn-blue-2))))
+   `(magit-blame-hash    ((t (:background ,hc-zenburn-bg-1 :foreground ,hc-zenburn-blue-2))))
+   `(magit-blame-name    ((t (:background ,hc-zenburn-bg-1 :foreground ,hc-zenburn-orange))))
+   `(magit-blame-date    ((t (:background ,hc-zenburn-bg-1 :foreground ,hc-zenburn-orange))))
+   `(magit-blame-summary ((t (:background ,hc-zenburn-bg-1 :foreground ,hc-zenburn-blue-2
+                                          :weight bold))))
+;;;;;; references etc
+   `(magit-dimmed         ((t (:foreground ,hc-zenburn-bg+3))))
+   `(magit-hash           ((t (:foreground ,hc-zenburn-bg+3))))
+   `(magit-tag            ((t (:foreground ,hc-zenburn-orange :weight bold))))
+   `(magit-branch-remote  ((t (:foreground ,hc-zenburn-green  :weight bold))))
+   `(magit-branch-local   ((t (:foreground ,hc-zenburn-blue   :weight bold))))
+   `(magit-branch-current ((t (:foreground ,hc-zenburn-blue   :weight bold :box t))))
+   `(magit-head           ((t (:foreground ,hc-zenburn-blue   :weight bold))))
+   `(magit-refname        ((t (:background ,hc-zenburn-bg+2 :foreground ,hc-zenburn-fg :weight bold))))
+   `(magit-refname-stash  ((t (:background ,hc-zenburn-bg+2 :foreground ,hc-zenburn-fg :weight bold))))
+   `(magit-refname-wip    ((t (:background ,hc-zenburn-bg+2 :foreground ,hc-zenburn-fg :weight bold))))
+   `(magit-signature-good      ((t (:foreground ,hc-zenburn-green))))
+   `(magit-signature-bad       ((t (:foreground ,hc-zenburn-red))))
+   `(magit-signature-untrusted ((t (:foreground ,hc-zenburn-yellow))))
+   `(magit-cherry-unmatched    ((t (:foreground ,hc-zenburn-cyan))))
+   `(magit-cherry-equivalent   ((t (:foreground ,hc-zenburn-magenta))))
+   `(magit-reflog-commit       ((t (:foreground ,hc-zenburn-green))))
+   `(magit-reflog-amend        ((t (:foreground ,hc-zenburn-magenta))))
+   `(magit-reflog-merge        ((t (:foreground ,hc-zenburn-green))))
+   `(magit-reflog-checkout     ((t (:foreground ,hc-zenburn-blue))))
+   `(magit-reflog-reset        ((t (:foreground ,hc-zenburn-red))))
+   `(magit-reflog-rebase       ((t (:foreground ,hc-zenburn-magenta))))
+   `(magit-reflog-cherry-pick  ((t (:foreground ,hc-zenburn-green))))
+   `(magit-reflog-remote       ((t (:foreground ,hc-zenburn-cyan))))
+   `(magit-reflog-other        ((t (:foreground ,hc-zenburn-cyan))))
 ;;;;; message-mode
    `(message-cited-text ((t (:inherit font-lock-comment-face))))
    `(message-header-name ((t (:foreground ,hc-zenburn-green+1))))
