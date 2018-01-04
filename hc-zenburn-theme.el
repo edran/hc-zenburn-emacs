@@ -865,6 +865,16 @@ Also bind `class' to ((class color) (min-colors 89))."
    `(rainbow-delimiters-depth-10-face ((t (:foreground ,hc-zenburn-orange))))
    `(rainbow-delimiters-depth-11-face ((t (:foreground ,hc-zenburn-green))))
    `(rainbow-delimiters-depth-12-face ((t (:foreground ,hc-zenburn-blue-5))))
+;;;;; realgud
+   `(realgud-overlay-arrow1 ((t (:foreground ,hc-zenburn-green+4))))
+   `(realgud-overlay-arrow2 ((t (:foreground ,hc-zenburn-yellow-1))))
+   `(realgud-overlay-arrow3 ((t (:foreground ,hc-zenburn-orange))))
+   `(realgud-bp-enabled-face ((t (:inherit error))))
+   `(realgud-bp-disabled-face ((t (:inherit secondary-selection))))
+   `(realgud-bp-line-enabled-face ((t (:foreground ,hc-zenburn-bg :background ,hc-zenburn-red-2))))
+   `(realgud-bp-line-disabled-face ((t (:inherit secondary-selection))))
+   `(realgud-line-number ((t (:foreground ,hc-zenburn-yellow-1))))
+   `(realgud-backtrace-number ((t (:foreground ,hc-zenburn-yellow-1, :weight bold))))
 ;;;;; rcirc
    `(rcirc-my-nick ((t (:foreground ,hc-zenburn-blue))))
    `(rcirc-other-nick ((t (:foreground ,hc-zenburn-orange))))
